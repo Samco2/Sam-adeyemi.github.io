@@ -18,6 +18,10 @@
 }
 .d-flex {
     display: flex!important;
+    @include respond(tab-land) { // width <1200px
+        flex-direction :column-reverse !important;
+        
+    }
 }
 .w-50 {
     width: 50%!important;

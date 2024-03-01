@@ -223,12 +223,12 @@ html {
 }
 @media (max-width: 75em) {
   html {
-    font-size: 56.25%;
+    font-size: 75%;
   }
 }
 @media (max-width: 56.25em) {
   html {
-    font-size: 80%;
+    font-size: 65.25%;
   }
 }
 @media (min-width: 112.5em) {
@@ -333,6 +333,11 @@ body:after {
 
 .d-flex {
   display: flex !important;
+}
+@media (max-width: 75em) {
+  .d-flex {
+    flex-direction: column-reverse !important;
+  }
 }
 
 .w-50 {
@@ -991,9 +996,36 @@ pt-3 {
   color: #89715b;
   font-weight: 700;
 }
+@media (max-width: 75em) {
+  .about-banner-content span {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .about-banner-content span {
+    display: block;
+    height: 6rem;
+  }
+}
 .about-banner-content h1 {
   margin-bottom: -4rem;
   font-size: 6rem;
+}
+@media (max-width: 75em) {
+  .about-banner-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+}
+@media (max-width: 75em) {
+  .about-banner-content h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .about-banner-content h1 {
+    font-size: 3.6rem;
+  }
 }
 .about-banner-content small {
   font-family: "Zilla Slab";
@@ -1002,9 +1034,30 @@ pt-3 {
   padding-left: 8rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 75em) {
+  .about-banner-content small {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 43.75em) {
+  .about-banner-content small {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .about-banner-content small {
+    padding-left: 0rem;
+  }
+}
 .about-banner-social p {
   margin-top: 5rem;
   color: #fff;
+}
+@media (max-width: 75em) {
+  .about-banner-social p {
+    margin-top: 2rem;
+    font-size: 2rem !important;
+  }
 }
 .about-banner-social ul {
   display: flex;
@@ -1012,13 +1065,29 @@ pt-3 {
   align-content: center;
   margin-bottom: 8rem;
 }
+@media (max-width: 75em) {
+  .about-banner-social ul {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .about-banner-social ul {
+    display: block;
+  }
+}
 .about-banner-social ul li {
   position: relative;
 }
 .about-banner-social ul li a {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   font-family: "Zilla Slab", serif;
+}
+@media (max-width: 75em) {
+  .about-banner-social ul li a {
+    font-size: 3rem;
+    font-weight: 800;
+  }
 }
 .about-banner-social ul li::before {
   content: "-";
@@ -1027,6 +1096,11 @@ pt-3 {
   margin: 0 10px;
   font-weight: 900;
   line-height: 1;
+}
+@media (max-width: 37.5em) {
+  .about-banner-social ul li::before {
+    content: "";
+  }
 }
 .about-banner-image {
   margin-right: 2rem;
@@ -1241,6 +1315,16 @@ pt-3 {
   margin: 0 auto;
   width: 60rem;
   object-fit: cover;
+}
+@media (max-width: 75em) {
+  #profile_pic {
+    width: auto;
+  }
+}
+@media (max-width: 43.75em) {
+  #profile_pic {
+    width: 30rem;
+  }
 }
 
 #theme-options-wrapper {

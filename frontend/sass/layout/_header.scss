@@ -11,11 +11,36 @@
             font-size: 6rem;
             color:#89715b;
             font-weight: 700;
+            @include respond(tab-land) { // width <1200px
+                font-size: 5rem;
+                
+            }
+            @include respond(phone) { // width <1200px
+                display: block;
+                height: 6rem;
+                
+                
+            }
 
         }
         h1{
             margin-bottom: -4rem;
             font-size: 6rem;
+            @include respond(tab-land) { // width <1200px
+                font-size: 6rem;
+                font-weight: 700;
+                
+            }
+            @include respond(tab-land) { // width <1200px
+                font-size: 4rem;
+                
+                
+            }
+            @include respond(phone) { // width <1200px
+                font-size: 3.6rem;
+                
+                
+            }
         }
         small{
             font-family: 'Zilla Slab';
@@ -23,6 +48,20 @@
             color: #fff;
             padding-left: 8rem;
             margin-bottom: 2rem;
+            @include respond(tab-land) { // width <1200px
+                font-size: 4rem;
+                
+            }
+            @include respond(tab-portt) { // width <1200px
+                font-size: 3rem;
+                
+            }
+            @include respond(phone) { // width <1200px
+                padding-left: 0rem;
+                
+                
+            }
+            
         }
 
 
@@ -30,19 +69,41 @@
     &-social{
         p{
             margin-top: 5rem;
-            color:$color-white
+            color:$color-white;
+            @include respond(tab-land) { // width <1200px
+                margin-top: 2rem;
+                font-size: 2.0rem !important;
+                
+            }
         }
         ul{
             display: flex;
             justify-content: center;
             align-content: center;
             margin-bottom: 8rem;
+            @include respond(tab-land) { // width <1200px
+                margin-bottom: 3rem;
+                
+                
+            }
+            @include respond(phone) { // width <1200px
+                display: block;
+                
+                
+            }
+            
             li{
                 position: relative;
                 a{
-                    font-size: 24px;
+                    font-size: 2.4rem;
                     font-weight: 700;
                     font-family: "Zilla Slab", serif;
+                    @include respond(tab-land) { // width <1200px
+                        font-size: 3rem;
+                    font-weight: 800;
+                        
+                    }
+                    
                     
                   
                 }
@@ -55,6 +116,11 @@
                 margin: 0 10px;
                 font-weight: 900;
                 line-height: 1;
+                @include respond(phone) { // width <1200px
+                    content: "";
+                    
+                    
+                }
             }
         }
     }

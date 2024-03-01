@@ -111,6 +111,14 @@
 	margin:0 auto;
 	width: 60rem;
 	object-fit: cover;
+	@include respond(tab-land) { // width <1200px
+		width: auto;
+		
+	}
+	@include respond(tab-portt) { // width <1200px
+		width: 30rem;
+		
+	}
 
 }
 
