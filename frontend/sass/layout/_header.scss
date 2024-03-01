@@ -18,6 +18,7 @@
             @include respond(phone) { // width <1200px
                 display: block;
                 height: 6rem;
+                font-size: 4rem;
                 
                 
             }
@@ -37,7 +38,7 @@
                 
             }
             @include respond(phone) { // width <1200px
-                font-size: 3.6rem;
+                font-size: 3rem;
                 
                 
             }
@@ -53,11 +54,12 @@
                 
             }
             @include respond(tab-portt) { // width <1200px
-                font-size: 3rem;
+                font-size: 2.5rem;
                 
             }
             @include respond(phone) { // width <1200px
                 padding-left: 0rem;
+                font-size: 2rem;
                 
                 
             }
